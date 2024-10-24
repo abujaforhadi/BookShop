@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "published_year": 1960,
+    "ISBN": "978-0-06-112008-4",
+    "price": 12.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9781784752637.jpg",
+    "description": "A gripping tale of racial injustice in the Deep South. Follows Scout Finch's journey through moral and social struggles."
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian",
+    "published_year": 1949,
+    "ISBN": "978-0-452-28423-4",
+    "price": 10.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9781784876555.jpg",
+    "description": "A dystopian novel about a totalitarian regime and its control over truth. Follows Winston Smith’s rebellion against Big Brother."
+  },
+  {
+    "id": 3,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Romance",
+    "published_year": 1813,
+    "ISBN": "978-0-14-143951-8",
+    "price": 9.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9780241734889.jpg",
+    "description": "A witty romance exploring love and societal expectations. Elizabeth Bennet navigates complex feelings for Mr. Darcy."
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "published_year": 1925,
+    "ISBN": "978-0-7432-7356-5",
+    "price": 11.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9781598537567.jpg",
+    "description": "A tragic story of love, wealth, and the American Dream. Follows Jay Gatsby's pursuit of a lost love in the Roaring Twenties."
+  },
+  {
+    "id": 5,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "genre": "Adventure",
+    "published_year": 1851,
+    "ISBN": "978-0-14-243724-7",
+    "price": 13.50,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9780451532282.jpg",
+    "description": "An epic tale of Captain Ahab’s obsessive hunt for a giant whale. Explores themes of fate, obsession, and nature’s power."
+  },
+  {
+    "id": 6,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "genre": "Historical Fiction",
+    "published_year": 1869,
+    "ISBN": "978-0-14-044793-4",
+    "price": 15.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9781784871949.jpg",
+    "description": "A vast narrative of Russian aristocracy during the Napoleonic Wars. Examines the complexities of life, love, and war."
+  },
+  {
+    "id": 7,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "published_year": 1951,
+    "ISBN": "978-0-316-76948-0",
+    "price": 10.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9780241950432.jpg",
+    "description": "A story of teenage rebellion and isolation. Follows Holden Caulfield as he struggles with the adult world around him."
+  },
+  {
+    "id": 8,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "published_year": 1937,
+    "ISBN": "978-0-618-00221-3",
+    "price": 14.50,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9781405629423.jpg",
+    "description": "A magical adventure where Bilbo Baggins helps dwarves reclaim their home. A precursor to Tolkien's 'Lord of the Rings' saga."
+  },
+  {
+    "id": 9,
+    "title": "The Spy",
+    "author": "Paulo Coelho",
+    "genre": "Adventure",
+    "published_year": 2011,
+    "ISBN": "978-0-06-112241-5",
+    "price": 22.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9780143788171.jpg",
+    "description": "A historical fiction based on the life of Mata Hari, accused of espionage. Explores themes of fame, betrayal, and resilience."
+  },
+  {
+    "id": 10,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "genre": "Philosophical Fiction",
+    "published_year": 1993,
+    "ISBN": "978-0-14-044913-6",
+    "price": 12.99,
+    "cover": "https://cdn2.penguin.com.au/covers/original/9780141192802.jpg",
+    "description": "A psychological exploration of guilt, crime, and morality. Follows Raskolnikov’s internal struggle after committing murder."
+  }
+]
