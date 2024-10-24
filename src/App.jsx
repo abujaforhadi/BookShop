@@ -10,16 +10,21 @@ function App() {
     status: "active",
   });
   const [selectedProduct, setSelectedProduct] = useState([]);
-  const [price, setPrice] = useState(0); // Initialize total price
+  const [price, setPrice] = useState(0);
+  const [historyPage, setHistoryPage] = useState([]); // Fixed typo in state declaration
 
-  // Function to handle product deletion and update the total price
+  // Function to handle product deletion and update history
   const handleDelete = (productId) => {
     const productToDelete = selectedProduct.find(
       (product) => product.id === productId
     );
 
     if (productToDelete) {
-      // Update the selected products list by removing the deleted product
+      // Add the deleted product to the history
+      const updatedHistory = [...historyPage, productToDelete];
+      setHistoryPage(updatedHistory);
+
+      // Remove the deleted product from the selected products
       const updatedProducts = selectedProduct.filter(
         (product) => product.id !== productId
       );
@@ -30,44 +35,33 @@ function App() {
     }
   };
 
-  // Function to handle product selection and avoid duplicates
+  // Function to handle product selection
   const hendelSelectedProduct = (newProduct) => {
     const isDuplicate = selectedProduct.some(
       (product) => product.id === newProduct.id
     );
 
     if (!isDuplicate) {
-      // Add the new product to the selected products list
       setSelectedProduct([...selectedProduct, newProduct]);
-
-      // Update the total price after adding the new product
       setPrice(price + newProduct.price);
     } else {
       alert("Product is already selected.");
     }
   };
 
-  // Function to toggle between 'cart' and 'history' views
+  // Function to toggle between cart and history views
   const hendelActiveBtn = (status) => {
-    if (status === "cart") {
-      setActiveBtn({
-        cart: true,
-        status: "cart",
-      });
-    } else {
-      setActiveBtn({
-        cart: false,
-        status: "history",
-      });
-    }
+    setActiveBtn({
+      cart: status === "cart",
+      status: status,
+    });
   };
 
-  // Display the total price in the Header
   const showPrice = () => price;
 
   return (
     <>
-      <Header price={showPrice()} /> {/* Pass total price to Header */}
+      <Header price={showPrice()} />
 
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div className="md:col-span-2 p-4 md:order-1 order-2">
@@ -80,6 +74,7 @@ function App() {
             handleDelete={handleDelete}
             activeBtn={activeBtn}
             hendelActiveBtn={hendelActiveBtn}
+            historyPage={historyPage} // Pass historyPage to AllCart
           />
         </div>
       </div>

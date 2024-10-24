@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import Cart from "./Cart";
 import History from "./History";
 
-function AllCart({ hendelActiveBtn, activeBtn,selectedProduct,handleDelete }) {
+function AllCart({ hendelActiveBtn, activeBtn,selectedProduct,handleDelete,historyPage }) {
   return (
     <div>
-      <h1>AllCard</h1>
+      
       <div className="flex justify-center gap-8 ">
         <button
           onClick={() => hendelActiveBtn("cart")}
@@ -21,7 +21,7 @@ function AllCart({ hendelActiveBtn, activeBtn,selectedProduct,handleDelete }) {
         </button>
       </div>
 
-      {activeBtn.cart ? <Cart handleDelete={handleDelete} selectedProduct={selectedProduct} /> : <History />}
+      {activeBtn.cart ? <Cart handleDelete={handleDelete} selectedProduct={selectedProduct} /> : <History historyPage={historyPage}/>}
     </div>
   );
 }
