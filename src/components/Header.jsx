@@ -1,15 +1,19 @@
+function Header({ price }) {
+  const available = 250; // Available amount
 
-function Header({price}) {
+  // Calculate the remaining balance
+  const remainingBalance = available - price;
+
   return (
     <div>
-      <div className="navbar ">
+      <div className="navbar">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">BookShop</a>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
             <p>Total price: {price.toFixed(2)} $</p>
-            <p>Available:250 $</p>
+            <p>Remaining Balance: {remainingBalance.toFixed(2)} $</p> {/* Display remaining balance */}
           </div>
           <div className="dropdown dropdown-end">
             <div
@@ -19,7 +23,7 @@ function Header({price}) {
             >
               <div className="w-10 rounded-full">
                 <img
-                  alt="Tailwind CSS Navbar component"
+                  alt="User Avatar"
                   src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
                 />
               </div>
