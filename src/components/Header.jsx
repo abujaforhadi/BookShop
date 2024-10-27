@@ -8,7 +8,7 @@ function Header({ price }) {
     <div>
       <div className="navbar">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">BookShop</a>
+          <a className="btn btn-ghost text-xl">Book <span className="text-green-500">Shop</span></a>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
