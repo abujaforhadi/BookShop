@@ -17,7 +17,7 @@ function AllCart({ hendelActiveBtn, activeBtn,selectedProduct,handleDelete,histo
           onClick={() => hendelActiveBtn("history")}
           className={`${activeBtn.cart ? "btn btn-outline" : "btn btn-outline bg-green-400"}`}
         >
-          History
+         Delete History
         </button>
       </div>
 
