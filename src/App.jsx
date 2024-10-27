@@ -56,7 +56,6 @@ function App() {
       status: status,
     });
   };
-
   const showPrice = () => price;
 
   return (
