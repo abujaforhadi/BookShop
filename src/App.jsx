@@ -77,8 +77,9 @@ function App() {
             historyPage={historyPage} // Pass historyPage to AllCart
           />
         </div>
-        <Footer></Footer>
+        
       </div>
+      <Footer></Footer>
     </>
   );
 }
