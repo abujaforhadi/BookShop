@@ -6,7 +6,7 @@ function Header({ price }) {
 
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar bg-gray-200">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">Book <span className="text-green-500">Shop</span></a>
         </div>
