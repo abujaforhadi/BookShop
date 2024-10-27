@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Products from "./components/Products";
 import AllCart from "./components/AllCart";
+import Footer from "./components/Footer";
 
 function App() {
   const [activeBtn, setActiveBtn] = useState({
@@ -76,6 +77,7 @@ function App() {
             historyPage={historyPage} // Pass historyPage to AllCart
           />
         </div>
+        <Footer></Footer>
       </div>
     </>
   );
